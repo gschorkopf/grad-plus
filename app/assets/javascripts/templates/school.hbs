@@ -1,0 +1,8 @@
+<h2>{{model.name}}</h2>
+
+<h4>Tasks</h4>
+<ul>
+  {{#each task in model.tasks}}
+    <li>{{task.title}}</li>
+  {{/each}}
+</ul>

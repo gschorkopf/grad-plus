@@ -1,2 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body { padding-top: 70px; }
+li > a.active {
+  background-color: #eee;
+}
+li > a:hover {
+  color: black;
+}
+li > a {
+  color: black;
+}

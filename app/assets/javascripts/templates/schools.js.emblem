@@ -1,8 +1,0 @@
-article#schools
-  h2 Schools
-  ul
-    each school in controller
-      link-to 'school' school tagName='li'
-        school.name
-
-outlet

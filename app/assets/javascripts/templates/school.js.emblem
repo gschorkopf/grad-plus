@@ -1,7 +1,0 @@
-article#school
-  header
-    h2 = model.name
-    h4 Tasks
-    ul
-      each task in model.tasks
-        li = task.title
