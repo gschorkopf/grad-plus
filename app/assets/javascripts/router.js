@@ -6,5 +6,7 @@ App.Router.reopen({
 })
 
 App.Router.map(function() {
-  this.resource('schools', { path: '/' });
+  this.resource('schools', { path: '/' }, function() {
+    this.resource('school', { path: '/schools/:id' });
+  });
 });

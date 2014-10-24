@@ -1,0 +1,4 @@
+article#school
+  header
+    h2 = model.name
+    h4 Tasks
