@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     resources :schools
+    resources :tasks
   end
 
   get '*path', to: 'home#show'
