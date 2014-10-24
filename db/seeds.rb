@@ -9,7 +9,7 @@
 end
 
 School.all.each do |school|
-  ['Apply', 'Get In', 'Drink Beers!'].each do |title|
+  ['Drink Beers!', 'Get In', 'Apply'].each do |title|
     school.tasks.create(title: title)
   end
 end
