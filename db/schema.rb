@@ -11,20 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141024192739) do
+ActiveRecord::Schema.define(version: 20141024233222) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "schools", force: true do |t|
-    t.string "name"
+    t.string  "name"
+    t.date    "due_date"
+    t.string  "city"
+    t.string  "state"
+    t.integer "board_pass_rate"
   end
 
   create_table "tasks", force: true do |t|
     t.string  "title"
     t.integer "school_id"
+    t.string  "url"
+    t.text    "notes"
+    t.boolean "completed", default: false
   end
 
+  add_index "tasks", ["completed"], name: "index_tasks_on_completed", using: :btree
   add_index "tasks", ["school_id"], name: "index_tasks_on_school_id", using: :btree
 
 end
