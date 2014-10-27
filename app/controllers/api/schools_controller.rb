@@ -28,7 +28,8 @@ class Api::SchoolsController < ApplicationController
   end
 
   def school_params
-    params.require(:school).permit(:name)
+    params.require(:school).permit(:name, :city, :state,
+      :image_url, :board_pass_rate, :due_date)
   end
 
 end
