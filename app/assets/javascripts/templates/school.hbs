@@ -4,6 +4,24 @@
   <img {{bind-attr src=model.imageUrl}} class='img-thumbnail' />
 {{/if}}
 
+<h4>Info</h4>
+<dl>
+  {{#if model.location}}
+    <dt>Location</dt>
+    <dd>{{model.location}}</dd>
+  {{/if}}
+
+  {{#if model.boardPassRate}}
+    <dt>Board Pass Rate</dt>
+    <dd>{{model.boardPassRate}}%</dd>
+  {{/if}}
+
+  {{#if model.dueDate}}
+    <dt>Application Due Date</dt>
+    <dd>{{model.dueDate}}</dd>
+  {{/if}}
+</dl>
+
 <h4>Tasks</h4>
 <ul>
   {{#each task in model.tasks}}
