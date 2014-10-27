@@ -1,5 +1,9 @@
 <h2>{{model.name}}</h2>
 
+{{#if model.imageUrl}}
+  <img {{bind-attr src=model.imageUrl}} class='img-thumbnail' />
+{{/if}}
+
 <h4>Tasks</h4>
 <ul>
   {{#each task in model.tasks}}
