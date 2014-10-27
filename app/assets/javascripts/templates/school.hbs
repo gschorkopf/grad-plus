@@ -1,4 +1,7 @@
-<h2>{{model.name}}</h2>
+<h2>
+  {{model.name}}
+  <button class='btn btn-danger pull-right' {{action 'delete'}}>Remove School</button>
+</h2>
 
 {{#if model.imageUrl}}
   <img {{bind-attr src=model.imageUrl}} class='img-thumbnail' />
@@ -19,8 +22,6 @@
     <dd>{{model.dueDate}}</dd>
   {{/if}}
 </dl>
-
-<button class='btn btn-danger' {{action 'delete'}}>Remove</button>
 
 <h4>Tasks</h4>
 <ul>
