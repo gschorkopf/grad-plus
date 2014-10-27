@@ -8,5 +8,6 @@ App.Router.reopen({
 App.Router.map(function() {
   this.resource('schools', { path: '/' }, function() {
     this.resource('school', { path: '/schools/:id' });
+    this.route('new', { path: '/schools/new' });
   });
 });

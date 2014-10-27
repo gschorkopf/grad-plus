@@ -1,6 +1,11 @@
 <div class="col-xs-3 sidebar">
   <h2>Schools</h2>
   <ul class="nav nav-sidebar">
+    <li>
+      {{#link-to 'schools.new'}}
+        Add a School <span class='glyphicon glyphicon-plus'></span>
+      {{/link-to}}
+    </li>
     {{#each school in controller}}
       <li>
         {{#link-to 'school' school}}

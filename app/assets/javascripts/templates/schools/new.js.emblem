@@ -1,0 +1,34 @@
+article#school
+  h2 Add a School
+
+  if showError
+    .error Schools must include a name, city, and state
+
+  form
+    fieldset
+      dl
+        dt: label Name
+        dd: view Ember.TextField value=fields.name
+
+      dl
+        dt: label City
+        dd: view Ember.TextField value=fields.city
+
+      dl
+        dt: label State
+        dd: view Ember.TextField value=fields.state
+
+      dl
+        dt: label Board Pass Rate
+        dd: view Ember.TextField value=fields.boardPassRate
+
+      dl
+        dt: label Due Date
+        dd: view Ember.TextField value=fields.dueDate
+
+      dl
+        dt: label Image URL
+        dd: view Ember.TextField value=fields.imageUrl
+
+    fieldset.actions
+      input type='submit' value='Create School' click="createSchool" class="btn btn-success"
