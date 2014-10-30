@@ -23,9 +23,11 @@
   {{/if}}
 </dl>
 
-<h4>Tasks</h4>
-<ul>
-  {{#each task in model.tasks}}
-    <li>{{task.title}}</li>
-  {{/each}}
-</ul>
+{{#if model.tasks}}
+  <h4>Tasks</h4>
+  <ul>
+    {{#each task in model.tasks}}
+      <li>{{task.title}}</li>
+    {{/each}}
+  </ul>
+{{/if}}
