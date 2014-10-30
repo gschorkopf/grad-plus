@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Cinzel);
 
 body { padding-top: 70px; }
 li > a.active {
@@ -17,4 +18,14 @@ img {
 
 footer {
   padding-top: 50px;
+}
+
+.glyphicon-plus {
+  color: green;
+}
+
+#brand {
+  font-family: 'Cinzel', serif;
+  color: white;
+  letter-spacing: 2px;
 }
